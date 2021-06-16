@@ -1,5 +1,11 @@
-# Track_test_moodle_plugin
+# EDUCATION TRACKING SOLUTION
 Track type test
+
+1. Capture users webcam to know who is doing the test and your suggestion to take after some min works well for now.
+2. Capture also the screenshots/video of the computer screen at random times
+3. The capture mechanism  is to capture  users image and/or interface screenshots should work when students is doing the quiz/test inside moodlle as well when they are asked to perfom something outside moodle. I am not sure how this will  work outside moodle maybe run in the background or something and once the student is done they can resume moodle and close that they have completed.
+
+Please focus on demonstrating ability to track students while in moodle and also outside moodle while doing a given task e.g. writting official letter using microsoft office. 
 
 Features
 
