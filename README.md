@@ -1,27 +1,78 @@
-# EDUCATION TRACKING SOLUTION
-Track type test
+# Moodle Proctoring
 
-1. Capture users webcam to know who is doing the test and your suggestion to take after some min works well for now.
-2. Capture also the screenshots/video of the computer screen at random times
-3. The capture mechanism  is to capture  users image and/or interface screenshots should work when students is doing the quiz/test inside moodlle as well when they are asked to perfom something outside moodle. I am not sure how this will  work outside moodle maybe run in the background or something and once the student is done they can resume moodle and close that they have completed.
+Moodle proctoring is a quizaccess plugin to capture the user's picture via webcam to identify who is attempting the Moodle Quiz. It will capture the picture automatically every 30 seconds and store it as a PNG image. 
 
-Please focus on demonstrating ability to track students while in moodle and also outside moodle while doing a given task e.g. writting official letter using microsoft office. 
 
-Features
+This plugin will help you to capture random pictures via webcam when the student/user is attempting the Quiz. 
+Before starting the quiz, it will ask for camera permission. By accepting the permission you will be able to see your picture and you can continue to answer the questions. It will act as a video recording service like everything is capturing so the user will don't try to do anything suspicious during the exam.
 
-High performance and less database overhead
-No need to create quiz again, use already created quiz.
-Simple and essay
+<p align="center">
+<img src="https://i.imgur.com/Vnw0Fhc.png">
+</p>
 
-Performance
 
-Reduce a large number of database query, especially write quires to database.
-Use of Moodle MUC
+## Features
+- Capture user/student images via web camera
+- Can't access quiz if the user does not allow the camera
+- Admin report and check any suspicious activity
+- Will work with existing Question Bank and Quiz
+- Webservice API for external call
+- Images are stored in Moodledata as a small png image
 
-Limitation
 
-Only multiple choice question supported
-Allow only defferedfeedback questions behavior.
-Partial marking is not supported.
-Question with option 'one answer only' give points only if answer set to 100% will be selected.
-Multiple answers allowed question will give points only if all the correct answer will be selected.
+## Configuration
+
+You can install this plugin from [Moodle plugins directory](https://moodle.org/plugins) or can download from [Github](https://github.com/AnowarCST/moodle-quizaccess_proctoring).
+
+> After installing the plugin, you can use the plugin by following:
+
+
+- Go to you quiz setting (Edit Quiz): 
+- Change the *Extra restrictions on attempts* to **must be acknowledged before starting an attempt**
+- Done!
+```
+  Dashboard->My courses->Your Course Name->Lesson->Quiz Name->Edit settings
+```
+<p align="center">
+<img src="https://i.imgur.com/rwTYQ9M.png" width="80%">
+</p>
+
+> Now you can attempt your quiz like this:
+<p align="center">
+<img src="https://i.imgur.com/UB9Cihs.png" width="40%">
+</p>
+
+> You can check the report from Admin Site:
+<p align="center">
+<img src="https://i.imgur.com/jQe52LB.png">
+</p>
+
+## Webservie/API
+ - To get the API allow the permission: quizaccess_proctoring:getcamshots
+ - Service URL like
+  
+    ```
+        {YourServer}/webservice/rest/server.php?
+        wstoken={XYZ}&
+        wsfunction=quizaccess_proctoring_get_camshots&
+        moodlewsrestformat=json&
+        quizid={1}&
+        userid={1}&
+        courseid={1}
+    ```
+
+
+
+## License
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program.  If not, see <http://www.gnu.org/licenses/>.
