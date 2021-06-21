@@ -3,6 +3,7 @@ define(['jquery'],
         /**
          * Initiate lightbox object.
          * @constructor
+         remove check options
          */
         function Lightbox(options) {
             this.album = [];
