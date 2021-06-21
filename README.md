@@ -7,7 +7,7 @@ This plugin will help you to capture random pictures via webcam when the student
 Before starting the quiz, it will ask for camera permission. By accepting the permission you will be able to see your picture and you can continue to answer the questions. It will act as a video recording service like everything is capturing so the user will don't try to do anything suspicious during the exam.
 
 <p align="center">
-<img src="https://i.imgur.com/Vnw0Fhc.png">
+<!--<img src="https://i.imgur.com/Vnw0Fhc.png"> -->
 </p>
 
 
@@ -38,12 +38,12 @@ Before starting the quiz, it will ask for camera permission. By accepting the pe
 
 > Now you can attempt your quiz like this:
 <p align="center">
-<img src="https://i.imgur.com/UB9Cihs.png" width="40%">
+<!--<img src="https://i.imgur.com/UB9Cihs.png" width="40%"> -->
 </p>
 
 > You can check the report from Admin Site:
 <p align="center">
-<img src="https://i.imgur.com/jQe52LB.png">
+<!-- <img src="https://i.imgur.com/jQe52LB.png"> -->
 </p>
 
 # Webservie/API
