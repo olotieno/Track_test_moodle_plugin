@@ -47,8 +47,8 @@ Before starting the quiz, it will ask for camera permission. By accepting the pe
 </p>
 
 # Webservie/API
- - To get the API allow the permission: quizaccess_proctoring:getcamshots
- - Service URL like
+ - To get the API allow the permission
+ - Use Service URL like
   
     ```
         {YourServer}/webservice/rest/server.php?
